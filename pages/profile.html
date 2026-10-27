@@ -5,65 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../css/style.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Caacupe+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <title>Meu perfil</title>
+    <title>FitLife | Perfil</title>
 </head>
 <body>
 
     <nav>
 
-        <a href="../index.html">
-            Fitlife
+        <a href="../index.html" class="logo">
+            <i class="fas fa-heartbeat"></i>
+            FitLife
         </a>
 
-        <ul>
-            <a href="imc.html">
-                <li>Calculadora de IMC</li>
-            </a>
-
-            <a href="tmb.html">
-                <li>Taxa metabólica basal</li>
-            </a>
-
-            <a href="water.html">
-                <li>Controle de hidratação</li>
-            </a>
-
-            <a href="profile.html">
-                <li>Meu perfil</li>
-            </a>
-
-            <a href="../about.html">
-                <li>Saiba mais</li>
-            </a>
+        <ul class="links-nav">
+            <li><a href="../index.html" class="link-nav">Home</a></li>
+            <li><a href="imc.html" class="link-nav">IMC</a></li>
+            <li><a href="tmb.html" class="link-nav">TMB</a></li>
+            <li><a href="water.html" class="link-nav">Água</a></li>
         </ul>
 
     </nav>
 
-    <main>
+    <main class="pagina-ferramenta">
 
-        <section>
+        <section class="container-ferramenta">
 
-            <header>
+            <header class="titulo-ferramenta">
+                <i class="fas fa-user"></i>
                 <h1>Meu <span>Perfil</span></h1>
             </header>
 
-        </section>
-
             <form action="#" method="GET">
 
-                <div>
+                <div class="grupo-form">
                     <label for="nome">Nome</label>
                     <input type="text" id="nome" name="nome" placeholder="Ex: Maria Silva" required>
                 </div>
 
-                <div>
+                <div class="grupo-form">
                     <label for="idade">Idade (anos)</label>
                     <input type="number" id="idade" name="idade" placeholder="Ex: 25" required>
                 </div>
 
-                <div>
+                <div class="grupo-form">
                     <label for="objetivo">Objetivo</label>
                     <select id="objetivo" name="objetivo" required>
                         <option value="">Selecione</option>
@@ -73,18 +59,17 @@
                     </select>
                 </div>
 
-                <button type="submit">Salvar</button>
+                <button type="submit" class="botao">Salvar</button>
+                <a href="../index.html" class="botao botao-voltar">Voltar</a>
 
             </form>
 
-            <p>
-                <a href="../index.html">Voltar</a>
-            </p>
+        </section>
 
     </main>
 
     <footer>
-        <p>© 2026 FitLife</p>
+        <p>© 2026 FitLife · <a href="../about.html">Sobre</a> · <a href="profile.html">Perfil</a></p>
     </footer>
 
 </body>
