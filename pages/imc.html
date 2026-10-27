@@ -30,6 +30,10 @@
                 <li>Controle de hidratação</li>
             </a>
 
+            <a href="profile.html">
+                <li>Meu perfil</li>
+            </a>
+
             <a href="../about.html">
                 <li>Saiba mais</li>
             </a>
@@ -42,19 +46,43 @@
         <section>
 
             <header>
-                <h1>IMC</h1>
-                <p>Função disponível em breve.</p>
+                <h1>Cálculo de IMC</h1>
+                <img src="../assets/imgs/imc.svg" alt="Ícone da calculadora de IMC">
             </header>
 
         </section>
 
-            <button>Calcular IMC</button>
+            <form action="#" method="GET">
+
+                <div>
+                    <label for="peso">Peso (kg)</label>
+                    <input type="number" id="peso" name="peso" step="0.1" placeholder="Ex: 70" required>
+                </div>
+
+                <div>
+                    <label for="altura">Altura (m)</label>
+                    <input type="number" id="altura" name="altura" step="0.01" placeholder="Ex: 1.75" required>
+                </div>
+
+                <button type="submit">Calcular</button>
+
+            </form>
+
+            <div>
+                <p>Seu IMC é:</p>
+                <h2>00.0</h2>
+                <p>Classificação</p>
+            </div>
 
             <p>
                 <a href="../index.html">Voltar</a>
             </p>
 
     </main>
+
+    <footer>
+        <p>© 2026 FitLife</p>
+    </footer>
 
 </body>
 </html>
