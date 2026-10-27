@@ -5,75 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../css/style.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Caacupe+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <title>Controle de hidratação</title>
+    <title>FitLife | Água</title>
 </head>
 <body>
 
     <nav>
 
-        <a href="../index.html">
-            Fitlife
+        <a href="../index.html" class="logo">
+            <i class="fas fa-heartbeat"></i>
+            FitLife
         </a>
 
-        <ul>
-            <a href="imc.html">
-                <li>Calculadora de IMC</li>
-            </a>
-
-            <a href="tmb.html">
-                <li>Taxa metabólica basal</li>
-            </a>
-
-            <a href="water.html">
-                <li>Controle de hidratação</li>
-            </a>
-
-            <a href="profile.html">
-                <li>Meu perfil</li>
-            </a>
-
-            <a href="../about.html">
-                <li>Saiba mais</li>
-            </a>
+        <ul class="links-nav">
+            <li><a href="../index.html" class="link-nav">Home</a></li>
+            <li><a href="imc.html" class="link-nav">IMC</a></li>
+            <li><a href="tmb.html" class="link-nav">TMB</a></li>
+            <li><a href="water.html" class="link-nav ativo">Água</a></li>
         </ul>
 
     </nav>
 
-    <main>
+    <main class="pagina-ferramenta">
 
-        <section>
+        <section class="container-ferramenta">
 
-            <header>
+            <header class="titulo-ferramenta">
+                <i class="fas fa-tint"></i>
                 <h1>Hidratação</h1>
-                <p>Acompanhe sua meta diária.</p>
-                <img src="../assets/imgs/water.svg" alt="Ícone do controle de hidratação">
             </header>
 
+            <p class="meta-agua">Meta: 2500ml</p>
+
+            <div class="controles-agua">
+                <button type="button" class="botao botao-adicionar-agua">+ 250ml</button>
+                <button type="button" class="botao botao-zerar-agua">Zerar</button>
+            </div>
+
+            <div class="barra-progresso">
+                <div class="progresso">0%</div>
+            </div>
+
+            <p class="total-agua">Total: <span>0</span> ml</p>
+
+            <a href="../index.html" class="botao botao-voltar">Voltar</a>
+
         </section>
-
-            <p>Meta diária: 2500 ml</p>
-
-            <div>
-                <button type="button">+ 250 ml</button>
-                <button type="button">Zerar</button>
-            </div>
-
-            <div>
-                <p>Progresso</p>
-            </div>
-
-            <p>Total: <span>0</span> ml</p>
-
-            <p>
-                <a href="../index.html">Voltar</a>
-            </p>
 
     </main>
 
     <footer>
-        <p>© 2026 FitLife</p>
+        <p>© 2026 FitLife · <a href="../about.html">Sobre</a> · <a href="profile.html">Perfil</a></p>
     </footer>
 
 </body>
