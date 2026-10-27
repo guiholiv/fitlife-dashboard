@@ -402,3 +402,79 @@ footer {
 footer a {
     color: var(--muted-color);
 }
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+
+        height: auto;
+        padding: 1rem 5%;
+    }
+
+    .links-nav {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .cabecalho {
+        padding: 1rem 0 2.5rem;
+    }
+
+    .cabecalho h1 {
+        font-size: 2rem;
+    }
+
+    .secao-cards {
+        justify-content: center;
+    }
+
+    .container-ferramenta {
+        padding: 2rem 1.5rem;
+    }
+
+    .titulo-ferramenta h1 {
+        font-size: 1.8rem;
+    }
+
+    .controles-agua {
+        gap: 1rem;
+    }
+}
+
+/* Até 480px */
+
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .links-nav {
+        gap: 0.5rem;
+    }
+
+    .cabecalho h1 {
+        font-size: 1.6rem;
+    }
+
+    .card-ferramenta {
+        max-width: 100%;
+    }
+
+    .titulo-ferramenta i {
+        font-size: 1.4rem;
+    }
+
+    .titulo-ferramenta h1 {
+        font-size: 1.4rem;
+    }
+}
